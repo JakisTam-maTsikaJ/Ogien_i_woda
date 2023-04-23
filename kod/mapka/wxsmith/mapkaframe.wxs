@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="mapkaFrame">
+		<size>899,747</size>
+		<id_arg>0</id_arg>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+			<pos>0,696</pos>
+			<size>904,64</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP5" variable="StaticBitmap5" member="yes">
+			<pos>0,-8</pos>
+			<size>24,720</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP6" variable="StaticBitmap6" member="yes">
+			<pos>24,0</pos>
+			<size>880,24</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP7" variable="StaticBitmap7" member="yes">
+			<pos>864,24</pos>
+			<size>64,672</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP8" variable="StaticBitmap8" member="yes">
+			<pos>24,24</pos>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP9" variable="StaticBitmap9" member="yes">
+			<pos>16,24</pos>
+			<size>848,672</size>
+			<bg>wxSYS_COLOUR_APPWORKSPACE</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP3" variable="StaticBitmap3" member="yes">
+			<pos>520,368</pos>
+			<size>56,56</size>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP4" variable="StaticBitmap4" member="yes">
+			<pos>16,576</pos>
+			<size>120,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="StaticBitmap2" member="yes">
+			<pos>648,448</pos>
+			<size>56,56</size>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP10" variable="lawa" member="yes">
+			<pos>264,696</pos>
+			<size>90,40</size>
+			<bg>#FF0000</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP11" variable="woda" member="yes">
+			<pos>464,696</pos>
+			<size>90,40</size>
+			<bg>#00FFFF</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP12" variable="StaticBitmap10" member="yes">
+			<pos>784,600</pos>
+			<size>88,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP13" variable="StaticBitmap11" member="yes">
+			<pos>600,544</pos>
+			<size>112,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP14" variable="StaticBitmap12" member="yes">
+			<pos>592,496</pos>
+			<size>48,80</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP15" variable="StaticBitmap13" member="yes">
+			<pos>472,472</pos>
+			<size>128,48</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP16" variable="StaticBitmap14" member="yes">
+			<pos>16,440</pos>
+			<size>480,56</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP17" variable="kwas" member="yes">
+			<pos>320,440</pos>
+			<size>74,40</size>
+			<bg>#00FF80</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP18" variable="StaticBitmap16" member="yes">
+			<pos>688,280</pos>
+			<size>88,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP19" variable="StaticBitmap17" member="yes">
+			<pos>192,256</pos>
+			<size>80,40</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP20" variable="StaticBitmap18" member="yes">
+			<pos>224,184</pos>
+			<size>688,56</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP21" variable="StaticBitmap19" member="yes">
+			<pos>344,184</pos>
+			<size>32,24</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP22" variable="StaticBitmap20" member="yes">
+			<pos>352,176</pos>
+			<size>16,16</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP23" variable="lawa1" member="yes">
+			<pos>456,184</pos>
+			<size>90,40</size>
+			<bg>#FF0000</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP24" variable="StaticBitmap22" member="yes">
+			<pos>600,112</pos>
+			<size>32,88</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP25" variable="StaticBitmap23" member="yes">
+			<pos>608,120</pos>
+			<size>16,72</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP28" variable="StaticBitmap26" member="yes">
+			<pos>640,24</pos>
+			<size>232,48</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP29" variable="StaticBitmap27" member="yes">
+			<pos>0,144</pos>
+			<size>104,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP30" variable="StaticBitmap28" member="yes">
+			<pos>8,144</pos>
+			<size>40,48</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP31" variable="StaticBitmap29" member="yes">
+			<pos>24,40</pos>
+			<size>64,112</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP33" variable="StaticBitmap21" member="yes">
+			<pos>120,296</pos>
+			<size>96,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP34" variable="StaticBitmap31" member="yes">
+			<pos>0,432</pos>
+			<size>48,24</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP35" variable="StaticBitmap32" member="yes">
+			<pos>688,344</pos>
+			<size>88,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP36" variable="StaticBitmap33" member="yes">
+			<pos>24,352</pos>
+			<size>24,32</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP32" variable="StaticBitmap15" member="yes">
+			<pos>728,176</pos>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP37" variable="StaticBitmap30" member="yes">
+			<pos>144,624</pos>
+			<size>32,18</size>
+			<hidden>1</hidden>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP26" variable="StaticBitmap24" member="yes">
+			<pos>32,512</pos>
+			<size>56,56</size>
+			<bg>wxSYS_COLOUR_INFOTEXT</bg>
+		</object>
+		<object class="wxTimer" name="ID_TIMER1" variable="Timer1" member="yes">
+			<interval>1</interval>
+			<handler function="OnTimer1Trigger1" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>

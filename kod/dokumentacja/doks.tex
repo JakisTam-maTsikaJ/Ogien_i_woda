@@ -1,0 +1,118 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{Ogień i Woda}
+
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section*{Technikalia}
+Na grę składają się 3 główne projekty: menu, fizyka i mapy, gdzie każda z map dziedziczy po fizycje jako oddzielny projekt.
+
+
+\section*{Menu}
+\begin{itemize}
+  \item z czego składa się menu?
+
+  \item jak działa menu?
+
+\end{itemize}
+
+\section*{Fizyka}
+\begin{itemize}
+  \item jak działa fizyka?
+\end{itemize}
+
+\subsection*{Unikanie konfliktów między projektami}
+Żeby fizyka można było dziedziczyć przez mapy trzeba usunąć część kodu, który tworzy CodeBlocks przy nowym projekcie. Celem jest uniknięcie konfliktów. Mowa o \texttt{build info} - całość trzeba było znaleźć w pliku \texttt{fizykaMain.cpp} i usunąć. Projekt działa w bez tego, a sam CodeBlocks później już tego nie dodaje.
+
+\begin{verbatim}
+wxString wxbuildinfo(wxbuildinfoformat format)
+{
+    wxString wxbuild(wxVERSION_STRING);
+
+    if (format == long_f )
+    {
+#if defined(__WXMSW__)
+        wxbuild << _T("-Windows");
+#elif defined(__UNIX__)
+        wxbuild << _T("-Linux");
+#endif
+
+#if wxUSE_UNICODE
+        wxbuild << _T("-Unicode build");
+#else
+        wxbuild << _T("-ANSI build");
+#endif // wxUSE_UNICODE
+    }
+
+    return wxbuild;
+}
+\end{verbatim}
+
+\section*{Mapy}
+\begin{itemize}
+  \item jak działają mapy?
+\end{itemize}
+
+\subsection*{Tworzenie nowej mapy w CodeBlocks}
+\begin{enumerate}
+  \item Stwórz nowy projekt wxWidgets w CodeBlocks, przykładowo \texttt{mapa}
+\end{enumerate}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item Dodaj z pliku projektu z fizyką
+
+  \begin{itemize}
+    \item w opcjach projektu (w lewym pasku, prawy przycisk na ikonę projektu) za pomocą \texttt{Add files...} trzeba znaleźć (albo wrzucić do projektu) i dodać pliki \texttt{fizykaMain.cpp} i \texttt{fizykaMain.h}
+
+    \item w opcjach projektu w \texttt{build options} trzeba dodać lokalizację projektu z fizyką
+
+  \end{itemize}
+
+  \item Ustal dziedziczenie po elementach \textit{fizyki} (tzn.: dodaj trochę kodu w klasach)
+
+  \begin{itemize}
+    \item dodaj dziedziczenie w \texttt{mapaMain.cpp} i użyj nowych funkcji:
+  \end{itemize}\begin{verbatim}
+MapaFrame::MapaFrame(wxWindow* parent,wxWindowID id) : fizykaFrame(parent, id) {
+
+  ... // domyślny kod - nie trzeba nic zmieniać
+
+  oczysc();
+  n_graczy = 2;
+  gracze = new wxStaticBitmap*[n_graczy] {
+    ... // elementy graczy, np: StaticImage1, StaticImage2
+  };
+
+  n_przeszkod = ...;
+  przeszkody = new wxStaticBitmap*[n_przeszkod] {
+    ... // obrazki przeszkód, np: StaticImage3, StaticImage4, ...
+  }
+}
+\end{verbatim}
+
+
+  \begin{itemize}
+    \item dodaj dziedziczenie i nadpisz funkcję, którą tworzy wxSmith w pliku \texttt{mapaMain.h}
+  \end{itemize}\begin{verbatim}
+#include "fizykaMain.h"
+class mapkaFrame: public fizykaFrame {
+
+  ... // właściwości klasy
+
+  private: void Create(wxWindow*, wxWindowID, const wxChar*, wxPoint, wxSize, long style, const wxString&) {}
+}
+\end{verbatim}
+
+Funkcja tworzy się domyślnie, jak używa się Smitha w CodeBlocksie, a jest przecież używana już w fizykaFrame, więc ten zapis sprawia, że nie jest uruchamiana 2 razy.
+
+\end{enumerate}
+
+\end{document}

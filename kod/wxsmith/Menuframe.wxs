@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="MenuFrame">
+		<title>Ogień i woda</title>
+		<size>720,446</size>
+		<id_arg>0</id_arg>
+		<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="BitmapButton2" member="yes">
+			<bitmap>Quit.png</bitmap>
+			<pos>664,8</pos>
+			<size>50,50</size>
+			<style>wxBU_AUTODRAW|wxTRANSPARENT_WINDOW</style>
+			<handler function="Przycisk_quit" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="BitmapButton1" member="yes">
+			<bitmap>start.png</bitmap>
+			<pos>280,208</pos>
+			<size>180,47</size>
+			<style>wxBU_AUTODRAW|wxTRANSPARENT_WINDOW</style>
+			<handler function="Przycisk_Start" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+			<bitmap>tlo.png</bitmap>
+			<pos>0,0</pos>
+			<size>720,448</size>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Informacje</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label></label>
+					<accel>F1</accel>
+					<help>Ukazuje twórców gry</help>
+					<bitmap>tworcy.png</bitmap>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxTimer" name="ID_TIMER1" variable="Timer1" member="yes">
+			<interval>1</interval>
+			<handler function="OnTimer1Trigger" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>

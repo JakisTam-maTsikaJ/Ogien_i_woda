@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="fizykaFrame">
+		<size>768,517</size>
+		<id_arg>0</id_arg>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxStaticBitmap" name="ID_JASZCZUR" variable="Jaszczur" member="yes">
+			<pos>192,368</pos>
+			<size>128,112</size>
+		</object>
+		<object class="wxStaticBitmap" name="ID_SMOK" variable="Smok" member="yes">
+			<pos>560,264</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="StaticBitmap2" member="yes">
+			<pos>0,488</pos>
+			<size>800,112</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP3" variable="StaticBitmap3" member="yes">
+			<pos>416,296</pos>
+			<size>88,56</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+		<object class="wxStaticBitmap" name="ID_IMAGEPANEL1" variable="StaticBitmap1" member="yes">
+			<pos>560,392</pos>
+			<size>72,60</size>
+			<bg>wxSYS_COLOUR_HIGHLIGHT</bg>
+		</object>
+	</object>
+</wxsmith>
